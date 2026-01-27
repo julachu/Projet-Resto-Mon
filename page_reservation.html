@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" />
+        <title> Resto'Mon </title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/png" href="./images/Logo.png"/>
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1> Resto'Mon </h1>
+            <nav >
+                <div><a href="Page_accueil.html">Accueil</a></div>
+                <div><a href="Page_carte.html">Carte</a></div>
+                <div><a href="Page_reservation.html">Réservation</a></div>
+                <div><a href="Page_contact.html">Contact</a></div>
+                <div><a href="Page_a_propos.html">À propos</a></div>
+            </nav>
+        </header>
+
+        <main>
+
+            <article id="Reservation">
+
+                <h2>Réservation</h2>
+                <form action="#" method="post">
+                    <label for="date">Choisissez une date :</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Choisissez l'heure :</label>
+                    <select id="time" name="time" required>
+                        <!-- Lundi -->
+                        <optgroup label="Lundi Midi (Fermé)">
+                            <option disabled>Fermé</option>
+                        </optgroup>
+                        <optgroup label="Lundi Soir (18h-22h)">
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                        </optgroup>
+
+                        <!-- Mardi à vendredi Midi (11h-14h) -->
+                        <optgroup label="Mardi à Vendredi Midi (11h-14h)">
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                        </optgroup>
+                        <!-- Mardi à Jeudi Soir (18h-22h) -->
+                        <optgroup label="Mardi à Jeudi Soir (18h-22h)">
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                        </optgroup>
+                        <!-- Vendredi et Samedi Soir (18h-23h59) -->
+                        <optgroup label="Vendredi et Samedi Soir (18h-23h59)">
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                        </optgroup>
+
+                        <!-- Samedi et Dimanche Midi (10h30-14h30) -->
+                        <optgroup label="Samedi et Dimanche Midi (10h30-14h30)">
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                        </optgroup>
+
+                        <!-- Dimanche Soir (18h-23h) -->
+                        <optgroup label="Dimanche Soir (18h-23h)">
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="people">Nombre de personnes :</label>
+                    <input type="number" id="people" name="people" min="1" max="10" required>
+
+                    <button type="submit">Réserver</button>
+                </form>
+                <h2>Commande à emporter</h2>
+                <p> par téléphone au : +1 XX XX XX XX XX</p>
+            </article>
+            <aside>
+                <h2> Nos horaires </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Jour</th>
+                                <th>Midi</th>
+                                <th>Soir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lundi</td>
+                                <td class="ferme">Fermé</td>
+                                <td rowspan="4">18h-22h</td>
+                            </tr>
+                            <tr>
+                                <td>Mardi</td>
+                                <td rowspan="4">11h-14h</td>
+                            </tr>
+                            <tr>
+                                <td>Mercredi</td>
+                            </tr>
+                            <tr>
+                                <td>Jeudi</td>
+                            </tr>
+                            <tr>
+                                <td>Vendredi</td>
+                                <td rowspan="2">18h-23h59</td>
+                            </tr>
+                            <tr>
+                                <td>Samedi</td>
+                                <td rowspan="2">10h30-14h30</td>
+                            </tr>
+                            <tr>
+                                <td>Dimanche</td>
+                                <td>18h-23h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+            </aside>
+        </main>
+        <footer>
+            <p>2025 - Resto'Mon • Restaurant à thème Pokémon</p>
+        </footer>
+    </body>
+</html>
