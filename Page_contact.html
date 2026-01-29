@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" />
+        <title> Resto'Mon </title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/png" href="./images/Logo.png"/>
+    </head>
+    <body>
+        <h1> Resto'Mon </h1>
+        <nav >
+            <div><a href="Page_accueil.html">Accueil</a></div>
+            <div><a href="Page_carte.html">Carte</a></div>
+            <div><a href="Page_reservation.html">Réservation</a></div>
+            <div><a href="Page_contact.html">Contact</a></div>
+            <div><a href="Page_a_propos.html">À propos</a></div>
+        </nav>
+        <main>
+            <article>
+                <h2> Notre adresse </h2>
+                <p>
+                    Pour  nous envoyer tout courrier : RestoMon;<a href="https://maps.app.goo.gl/2pEWcHvaZFLr1X5cA" target="_blank">NB11 Pokemouche, Canada </a>
+                    <img src="./images/adresse.png" class="image_map">
+                </p>
+                <h2> Nous contacter par mail</h2>
+                <div class="information_contact">
+                    Pour toute information : <a href="mailto:estoMonContact@gmail.com">RestoMonContact@gmail.com</a> </br>
+                    Pour recrutement : <a href="mailto:estoMonTraveil@gmail.com">RestoMonTravail@gmail.com</a>
+                </div>
+                <h2> Nous contacter par téléphone</h2>
+                <p>Du <b><u>lundi au samedi</u></b> de <b><u>9h à 20h</u></b></p>
+                <div class="information_contact">
+                    Pour les commandes: +1 XX XX XX XX XX </br>
+                    Pour toute autre chose : +1 XX XX XX XX XX
+                </div>
+
+                <form method="get">
+
+                    <fieldset>
+                        <legend> Vous voulez nous envoyer votre avis ou poser un question ?</legend>
+                        <label for ="Nom"> Nom </label>
+                        <input type="text" id="Nom" name="Nom" required ="required">
+                        <label for ="Prénom"> Prénom </label>
+                        <input id="Prenom" type="text" required="required">
+                        <label for="mail" > E-mail </label>
+                        <input id="mail" type="email" placeholder="email@domaine.com" required="required">
+                        <label for="avis">Votre message</label>
+                        <input id="avis" type="textarea" placeholder="Votre avis ici">
+                    </fieldset>
+
+                    <input type="submit" value="Envoyer">
+
+                </form>
+
+            </article>
+            <aside>
+                <div class="AccesRapide">
+                    <h2> Nos horaires </h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Jour</th>
+                                <th>Midi</th>
+                                <th>Soir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lundi</td>
+                                <td class="ferme">Fermé</td>
+                                <td rowspan="4">18h-22h</td>
+                            </tr>
+                            <tr>
+                                <td>Mardi</td>
+                                <td rowspan="4">11h-14h</td>
+                            </tr>
+                            <tr>
+                                <td>Mercredi</td>
+                            </tr>
+                            <tr>
+                                <td>Jeudi</td>
+                            </tr>
+                            <tr>
+                                <td>Vendredi</td>
+                                <td rowspan="2">18h-23h59</td>
+                            </tr>
+                            <tr>
+                                <td>Samedi</td>
+                                <td rowspan="2">10h30-14h30</td>
+                            </tr>
+                            <tr>
+                                <td>Dimanche</td>
+                                <td>18h-23h</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>
+                        Suivez nous sur les réseaux
+                    </h3>
+                    <ul>
+                        <li><img src="./images/logo_facebook.png" class="LogoReseaux"><a href="https://www.facebook.com" target="_blank">Notre Facebook</a></li>
+                        <li><img src="./images/logo_instagram.jpg" class="LogoReseaux"><a href="https://www.instragram.com" target="_blank">Notre Instagram</a></li>
+                        <li><img src="./images/logo_twitter.png" class="LogoReseaux"><a href="https://www.twitter.com" target="_blank">Notre Twitter</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <p>2025 - Resto'Mon • Restaurant à thème Pokémon</p>
+        </footer>
+    </body>
+</html>
